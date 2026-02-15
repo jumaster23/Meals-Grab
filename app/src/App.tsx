@@ -43,13 +43,13 @@ function App() {
           <input 
             type="search" 
             placeholder="Search for a meal..." 
-            className="border-2 border-orange-200 text-black rounded-xl px-6 py-3 w-full focus:outline-none focus:border-orange-400 transition-all shadow-sm"
+            className="border-2 border-orange-400 text-black rounded-xl px-6 py-3 w-full focus:outline-none focus:border-orange-400 transition-all shadow-sm"
             value={search}
             onChange={(e) => setSearch(e.target.value)}
           />
           <button 
             onClick={handleRandom}
-            className='bg-white border-2 border-orange-200 px-4 py-3 rounded-xl cursor-pointer hover:bg-linear-to-r hover:from-amber-100 hover:to-orange-200 transition-all duration-300 shadow-sm'>
+            className='bg-orange-400 border-2 border-orange-200 px-4 py-3 rounded-xl cursor-pointer hover:bg-linear-to-r hover:from-amber-100 hover:to-orange-200 transition-all duration-300 shadow-sm'>
             <img src={random} alt="random" className="w-6 h-6" />
           </button>
         </div>
