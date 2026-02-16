@@ -1,10 +1,11 @@
 import { useEffect, useState } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
+import type { Meal } from '../types/Meals_types'
 
 function MealDetail() {
   const { id } = useParams()
   const navigate = useNavigate()
-  const [meal, setMeal] = useState<any>()
+  const [meal, setMeal] = useState<Meal | null>(null)
 
   useEffect(() => {
     fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${id}`)

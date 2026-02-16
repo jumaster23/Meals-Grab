@@ -5,5 +5,8 @@ export type Meal = {
   strCategory: string;
   strArea: string;
   strInstructions: string;
-  strMealThumb: string; 
+  strMealThumb: string;
+  strYoutube?: string;
+  [key: `strIngredient${number}`]: string | undefined;
+  [key: `strMeasure${number}`]: string | undefined;
 };
